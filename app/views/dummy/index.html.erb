@@ -1,0 +1,15 @@
+<h1 id='title'>Dummy#index</h1>
+<p>Find me in app/views/dummy/index.html.erb</p>
+
+<%= form_with(url: '/comments', scope: :comment) do |f| %>
+<%= f.text_field 'content'%>
+<%= f.submit 'crear comentario'%>
+<%end%>
+
+<%= link_to 'Ver Comentarios', comments_path, 'data-remote': true %>
+
+<ul></ul>
+<div id='update'></div>
+
+<%= render 'modal'%>
+<%# link_to 'Test HTML', '#', data: {confirm: "seguro quieres hacerme click?"} %>

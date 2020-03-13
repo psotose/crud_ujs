@@ -1,0 +1,4 @@
+<%= comment.content %>
+<%= link_to 'Ver', comment_path(comment), 'data-remote': true %>
+<%= link_to 'Actualizar', edit_comment_path(comment), 'data-remote': true %>
+<%= link_to 'Eliminar', comment_path(comment), data: {remote: true, confirm: 'Segurolas?'}, method: :delete %>

@@ -1,0 +1,2 @@
+$('.modal').modal('hide')
+$('#comment_<%= @comment.id %>').html('<%= j render 'inner_comment', comment: @comment %>')
